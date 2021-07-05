@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.pointer:hover{
+    cursor: pointer;
+}
+
+@font-face{
+    font-family: 'agKrismenn';
+    src: url(fonts/avant-garde-gothic-2-bold-1.otf);
+}
+@font-face{
+    font-family: 'agtext';
+    src: url(fonts/avant-g-medium.ttf)
+}
+body{
+    background-color: black;
+}
+.mainSection{
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    background-image: url("images/autoportraitWEB.jpg");
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    place-items: center;
+}
+
+.fond{
+    min-width: 100%;
+}
+
+.lighText{
+    color: white;
+}
+.menuBox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+}
+.menuTextBox{
+    position: relative;
+    width: 100%;
+    height: 33.3%;
+}
+.menuText{
+    font-size: 30px;
+    font-family: agText;
+    letter-spacing: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.menuTextBzhg{
+    position: absolute;
+    opacity: 0;
+    animation: 8s ease-in infinite alternate fadeBzhg;
+}
+.menuTextEng{
+    position: absolute;
+    opacity: 0;
+    animation: 8s ease-in infinite alternate fadeEng;
+}
+.menuTextFr{
+    position: absolute;
+    opacity: 0;
+    animation: 8s ease-out infinite alternate fadeFr;
+}
+@keyframes fadeBzhg {
+    0%      { opacity: 1; }
+    33%     { opacity: 0; }
+    67%     { opacity: 0; }
+    100%    { opacity: 1; }
+}
+@keyframes fadeEng {
+    0%      { opacity: 0; }
+    33%     { opacity: 1; }
+    67%     { opacity: 0; }
+    100%    { opacity: 0; }
+}
+@keyframes fadeFr {
+    0%      { opacity: 0; }
+    33%     { opacity: 0; }
+    67%     { opacity: 1; }
+    100%    { opacity: 0; }
+}
+
+.krismenn{
+    font-size: 30px;
+    font-family: agKrismenn;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+
+
+.menuBtn{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    transform: rotateZ(0deg);
+}
+.menuBtnOn{
+    display: flex;
+}
+.menuBtnOff{
+    display: none;
+}
+
+/*menu ouvrant centré*/
+
+.menuBoxClosed{
+    display: none;
+    opacity: 0;
+}
+.menuBoxOpened{
+    display: flex;
+    opacity: 0.8;
+    flex-direction: column;
+    justify-content: space-around;
+    place-items: center;
+}
+/*contenu du menu*/
+
+
+
+.socialMedia{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+}
+.icon{
+    display: inline-block;
+}
+.menuCloser{
+    width: 25px;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+}
+.menuCloserOn{
+    display: flex;
+}
+.menuCloserOff{
+    display: None;
+}
+
+
+/*ombrage du fond*/
+.backdrop{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+}
+.backdropClosed{
+    display: none;
+    opacity: 0;
+}
+.backdropOpened{
+    display: block;
+}
+
+
+/*  section selaou  */
+
+.sectionSelaou{
+    width: min(500px, 100%);
+    height: min(600px, 100%);
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.sectionSelaouCloserBox{
+    width: max(10%, 30px);
+    height: max(10%, 30px);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: grid;
+    place-items: center;
+    background-color: black;
+    display: grid;
+    place-items: center;
+}
+.sectionSelaouCloser{
+    width: 25px;
+}
+
+.sectionSelaouClosed{
+    display: none;
+}
+.sectionSelaouOpened{
+    display: flex;
+    flex-direction: column;
+}
+.albumBox{
+    width: 100%;
+    position: relative;
+}
+.album{
+    width: 100%;
+}
+.sectionSelaouIconBox{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    place-items: center;
+}
+
+/* sectionParoles  */
+
+.sectionParoles{
+    width: min(100%, 1000px);
+    height: 800px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.sectionParolesClosed{
+    display: none;
+}
+.sectionParolesOpened{
+    display: flex;
+}
+.sectionParolesCloser{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+.livretObject{
+    width: 100%;
+}
+
+/*section contact*/
+
+.sectionContact{
+    width: min(500px, 100%);
+    height: 400px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.fadeIn{
+    animation: 400ms ease-out 0ms 1 fadeIn;
+}
+
+@keyframes fadeIn {
+    0%      { opacity: 0 }
+    100%    { opacity: 1 }
+    
+}
+.sectionContactOpened{
+    display: grid;
+    place-items: center;
+}
+.sectionContactClosed{
+    display: none;
+}
+
+.mail{
+    font-size: 30px;
+    font-family: 'agtext';
+    color: white;
+}

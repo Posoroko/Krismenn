@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krismenn</title>
+</head>
+
+<body>
+
+<section class="mainSection fadeIn">
+
+    <h1 class="lighText krismenn">KRISMENN</h1>
+
+
+    <h2 class="menuBtn menuBtnOn pointer" id="menu">
+        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 24 24" width="30px" fill="white"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+    </h2>
+
+    <div class="backdrop backdropClosed fadeIn" id="backdrop">
+
+        <div id="menuBox" class="menuBox menuBoxClosed">
+            <div class="menuTextBox selaouBox pointer" id="selaouBox">
+                <span class="lighText menuText menuLink menuTextBzhg" id="selaou">SELAOU</span>
+                <span class="lighText menuText menuLink menuTextEng" id="selaou">LISTEN</span>
+                <span class="lighText menuText menuLink menuTextFr" id="selaou">ECOUTER</span>
+            </div>
+
+            <div class="menuTextBox poziouBox pointer" id="parolesBox">
+                <span class="lighText menuText menuLink menuTextBzhg">POZIOÙ</span>
+                <span class="lighText menuText menuLink menuTextEng">LYRICS</span>
+                <span class="lighText menuText menuLink menuTextFr" id="écouter">PAROLES</span>
+            </div>
+
+            <div class="menuTextBox kontaktBox pointer" id="contactBox">
+                <span class="lighText menuText menuLink menuTextBzhg">KONTAKT</span>
+                <span class="lighText menuText menuLink menuTextEng">CONTACT</span>
+                <span class="lighText menuText menuLink menuTextFr">CONTACTER</span>
+            </div>
+
+            <div class="socialMedia menuItem">
+
+                <a class="icon fbIcon menuLink" href="https://www.facebook.com/Krismenn/" target="_blank" rel="noreferrer noopener">
+                    <svg xmlns="http://www.w3.org/2000/svg"
+                        enable-background="new 0 0 24 24"
+                        height="20px"
+                        viewBox="0 0 24 24"
+                        width="20px"
+                        fill="white"><rect fill="none" height="24" width="24"/>
+                        <path d="M22,12c0-5.52-4.48-10-10-10S2,6.48,2,12c0,4.84,3.44,8.87,8,9.8V15H8v-3h2V9.5C10,7.57,11.57,6,13.5,6H16v3h-2 c-0.55,0-1,0.45-1,
+                        1v2h3v3h-3v6.95C18.05,21.45,22,17.19,22,12z"/>
+                    </svg>
+                </a>
+
+                <a class="icon instaIcon menuLink" href="https://www.instagram.com/krismenn/" target="_blank" rel="noreferrer noopener">
+                    <?xml version="1.0"?>
+                    <svg fill="white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        width="20px"
+                        height="20px">
+                        <path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16
+                        3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761
+                        7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12
+                        15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"/>
+                    </svg>
+                </a>
+
+                <a class="icon ytIcon menuLink" href="https://www.youtube.com/user/krismenn29" target="_blank" rel="noreferrer noopener">
+                    <svg fill="white"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 16 16" width="20px"
+                        height="20px">
+                        <path d="M 8 2 C 5.960938 2 4.15625 2.210938 3.058594 2.375 C 2.160156 2.507813 1.445313 3.210938 1.28125 4.113281 C 1.140625 4.902344 1 6.054688 1 7.5 C 1 8.945313 1.140625 10.097656 1.28125 10.886719 C 1.445313 11.789063 2.160156 12.488281 3.058594 12.625 C 4.160156 12.789063 5.972656 13 8 13 C 10.027344 13 11.835938 12.789063 12.9375 12.625 L 12.941406 12.625 C 13.839844 12.492188 14.554688 11.789063 14.71875 10.886719 C 14.859375 10.09375 15 8.941406 15 7.5 C 15 6.054688 14.859375 4.902344 14.714844 4.113281 C 14.554688 3.210938 13.839844 2.507813 12.941406 2.375
+                            C 11.84375 2.210938 10.039063 2 8 2 Z M 8 3 C 9.96875 3 11.730469 3.203125 12.792969 3.363281 C 13.261719 3.433594
+                            13.640625 3.800781 13.730469 4.289063 C 13.863281 5.027344 14 6.121094 14 7.5 C 14 8.878906 13.863281 9.972656 13.734375
+                            10.707031 C 13.644531 11.199219 13.265625 11.566406 12.792969 11.636719 C 11.722656 11.792969 9.957031 12 8 12 C 6.042969
+                            12 4.273438 11.792969 3.207031 11.636719 C 2.738281 11.566406 2.355469 11.199219 2.265625 10.707031 C 2.136719 9.96875 2
+                            8.878906 2 7.5 C 2 6.117188 2.136719 5.027344 2.265625 4.289063 C 2.355469 3.800781 2.734375 3.433594 3.203125 3.367188 L 3.207031 3.367188 C 4.269531 3.207031 6.03125 3 8 3 Z M 6 5 L 6 10 L 11 7.5 Z"/>
+                    </svg>
+                </a>
+
+            </div>
+
+        </div>
+
+        <section id="sectionSelaou" class="sectionSelaou sectionSelaouClosed fadeIn">
+
+            <div class="albumBox">
+                <img class="album" src="images/pochette.jpg" alt="album Krismenn">
+
+                <div class="sectionSelaouCloserBox">
+                    <img class="sectionSelaouCloser pointer" src="images/closer.png" alt="" id="sectionSelaouCloser">
+                </div>
+            </div>
+
+            <div class="sectionSelaouIconBox">
+
+                <a href="https://play.spotify.com/album/0hEBkLpetOtfc0thvtPKKu?play=true&utm_source=open.spotify.com&utm_medium=open" target="_blank">
+                    <svg class="pointer" fill="white" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 26 26" width="35px" height="35px"><path d="M 13 0 C 5.800781 0 0 5.800781 0 13 C 0 20.199219 5.800781 26 13 26 C 20.199219 26 26 20.199219 26 13 C 26 5.800781 20.199219 0 13 0 Z M 18.300781 19.101563 C 18.101563 19.101563 17.898438 19 17.699219 18.898438 C 15.800781 17.800781 13.5 17.199219 11 17.199219 C 9.601563 17.199219 8.199219 17.398438 6.898438 17.699219 C 6.699219 17.699219 6.398438 17.800781 6.300781 17.800781 C 5.800781 17.800781 5.5 17.398438 5.5 17 C 5.5 16.5 5.800781 16.199219 6.199219 16.101563 C 7.800781 15.699219 9.398438 15.5 11.101563 15.5 C 13.898438 15.5 16.5 16.199219 18.699219 17.5 C 19 17.699219 19.199219 17.898438 19.199219 18.398438 C 19.101563 18.800781 18.699219 19.101563 18.300781 19.101563 Z M 19.699219 15.699219 C 19.398438 15.699219 19.199219 15.601563 19 15.5 C 16.898438 14.199219 14 13.398438 10.699219 13.398438 C 9.101563 13.398438 7.601563 13.601563 6.5 13.898438 C 6.199219 14 6.101563 14 5.898438 14 C 5.300781 14 4.898438 13.5 4.898438 13 C 4.898438 12.398438 5.199219 12.101563 5.699219 11.898438 C 7.199219 11.5 8.699219 11.199219 10.800781 11.199219 C 14.199219 11.199219 17.5 12 20.101563 13.601563 C 20.5 13.800781 20.699219 14.199219 20.699219 14.601563 C 20.699219 15.199219 20.300781 15.699219 19.699219 15.699219 Z M 21.300781 11.699219 C 21 11.699219 20.898438 11.601563 20.601563 11.5 C 18.199219 10.101563 14.601563 9.300781 11.101563 9.300781 C 9.300781 9.300781 7.5 9.5 5.898438 9.898438 C 5.699219 9.898438 5.5 10 5.199219 10 C 4.5 10.101563 4 9.5 4 8.800781 C 4 8.101563 4.398438 7.699219 4.898438 7.601563 C 6.800781 7 8.800781 6.800781 11.101563 6.800781 C 14.898438 6.800781 18.898438 7.601563 21.898438 9.300781 C 22.300781 9.5 22.601563 9.898438 22.601563 10.5 C 22.5 11.199219 22 11.699219 21.300781 11.699219 Z"/></svg>
+                </a>
+
+                <a href="http://www.deezer.com/album/15334697?utm_source=deezer&utm_content=album-15334697&utm_term=16212501_1486977741&utm_medium=web" target="_blank">
+                    <svg class="pointer" fill="white" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 32 32" width="35px" height="35px"><path d="M 24 4 L 24 6 L 28 6 L 28 4 Z M 14 7 L 14 9 L 18 9 L 18 7 Z M 24 7 L 24 9 L 28 9 L 28 7 Z M 14 10 L 14 12 L 18 12 L 18 10 Z M 24 10 L 24 12 L 28 12 L 28 10 Z M 14 13 L 14 15 L 18 15 L 18 13 Z M 24 13 L 24 15 L 28 15 L 28 13 Z M 4 16 L 4 18 L 8 18 L 8 16 Z M 14 16 L 14 18 L 18 18 L 18 16 Z M 19 16 L 19 18 L 23 18 L 23 16 Z M 24 16 L 24 18 L 28 18 L 28 16 Z M 4 19 L 4 21 L 8 21 L 8 19 Z M 9 19 L 9 21 L 13 21 L 13 19 Z M 14 19 L 14 21 L 18 21 L 18 19 Z M 19 19 L 19 21 L 23 21 L 23 19 Z M 24 19 L 24 21 L 28 21 L 28 19 Z M 4 22 L 4 24 L 8 24 L 8 22 Z M 9 22 L 9 24 L 13 24 L 13 22 Z M 14 22 L 14 24 L 18 24 L 18 22 Z M 19 22 L 19 24 L 23 24 L 23 22 Z M 24 22 L 24 24 L 28 24 L 28 22 Z M 4 25 L 4 27 L 8 27 L 8 25 Z M 9 25 L 9 27 L 13 27 L 13 25 Z M 14 25 L 14 27 L 18 27 L 18 25 Z M 19 25 L 19 27 L 23 27 L 23 25 Z M 24 25 L 24 27 L 28 27 L 28 25 Z"/></svg>
+                </a>
+
+                <a href="https://www.youtube.com/user/krismenn29" target="_blank">
+                    <svg class="pointer" fill="white" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16" width="35px" height="35px"><path d="M 8 2 C 5.960938 2 4.15625 2.210938 3.058594 2.375 C 2.160156 2.507813 1.445313 3.210938 1.28125 4.113281 C 1.140625 4.902344 1 6.054688 1 7.5 C 1 8.945313 1.140625 10.097656 1.28125 10.886719 C 1.445313 11.789063 2.160156 12.488281 3.058594 12.625 C 4.160156 12.789063 5.972656 13 8 13 C 10.027344 13 11.835938 12.789063 12.9375 12.625 L 12.941406 12.625 C 13.839844 12.492188 14.554688 11.789063 14.71875 10.886719 C 14.859375 10.09375 15 8.941406 15 7.5 C 15 6.054688 14.859375 4.902344 14.714844 4.113281 C 14.554688 3.210938 13.839844 2.507813 12.941406 2.375 C 11.84375 2.210938 10.039063 2 8 2 Z M 8 3 C 9.96875 3 11.730469 3.203125 12.792969 3.363281 C 13.261719 3.433594 13.640625 3.800781 13.730469 4.289063 C 13.863281 5.027344 14 6.121094 14 7.5 C 14 8.878906 13.863281 9.972656 13.734375 10.707031 C 13.644531 11.199219 13.265625 11.566406 12.792969 11.636719 C 11.722656 11.792969 9.957031 12 8 12 C 6.042969 12 4.273438 11.792969 3.207031 11.636719 C 2.738281 11.566406 2.355469 11.199219 2.265625 10.707031 C 2.136719 9.96875 2 8.878906 2 7.5 C 2 6.117188 2.136719 5.027344 2.265625 4.289063 C 2.355469 3.800781 2.734375 3.433594 3.203125 3.367188 L 3.207031 3.367188 C 4.269531 3.207031 6.03125 3 8 3 Z M 6 5 L 6 10 L 11 7.5 Z"/></svg>
+                </a>
+
+                <a href="https://itunes.apple.com/fr/album/shabituer-lobscurite-n-om/id1204853220?ign-mpt=uo%3D4&ls=1&app=music&at=1l3v3cP&ct=ozp8zb" target="_blank">
+                    <svg class="pointer" fill="white" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 64 64" width="35px" height="35px"><path d="M45.928,7H18.072C11.957,7,7,11.957,7,18.072v27.856C7,52.043,11.957,57,18.072,57h27.856C52.043,57,57,52.043,57,45.928	V18.072C57,11.957,52.043,7,45.928,7z M37.67,44.644c-1.702,0-4.09-1.045-4.09-3.493c0-2.448,1.522-3.881,3.672-4.299	c0.851-0.165,1.785-0.354,2.603-0.522c0.868-0.178,1.489-0.941,1.489-1.827l0-11.266c0-0.534-0.489-0.934-1.012-0.828l-13.153,2.655	c-0.526,0.106-0.904,0.568-0.904,1.105v16.056c0,2.3-0.347,5.724-5.469,5.724c-1.697,0-4.079-1.042-4.079-3.484	s1.519-3.871,3.662-4.288c0.919-0.179,1.935-0.385,2.797-0.561c0.735-0.151,1.258-0.8,1.253-1.55l-0.134-18.631	c-0.008-1.06,0.738-1.976,1.777-2.184l15.531-3.116c0.795-0.159,1.537,0.444,1.537,1.255c0.001,5.388,0.003,22.895,0.003,23.516	C43.153,41.211,42.805,44.644,37.67,44.644z"/></svg>
+                </a>
+
+            </div>
+
+
+        </section>
+
+        <section class="sectionParoles sectionParolesClosed fadeIn" id="sectionParoles">
+
+       
+
+            <object class="livretObject" id="livret" type="application/pdf"
+                data="images/livret/livret-Krismenn.pdf">
+
+            </object>
+           
+
+            <img class="menuCloser pointer" src="images/closer.png" alt="" id="sectionParolesCloser">
+
+
+
+        </section>
+
+        <section class="sectionContact sectionContactClosed fadeIn" id="sectionContact">
+
+            <span class="mail">info@krismenn.com</span>
+            <img class="menuCloser pointer" src="images/closer.png" alt="" id="sectionContactCloser">
+
+
+        </section>
+
+        <img class="menuCloser pointer menuCloserOn" src="images/closer.png" alt="" id="menuCloser">
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script src="logic.js"></script>
+</section>
+
+
+</body>
+</html>
