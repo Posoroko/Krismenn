@@ -43,6 +43,16 @@ body{
     transform: translate(-50%, -50%);
     width: 150px;
     height: 150px;
+    opacity: 0.8;
+    flex-direction: column;
+    justify-content: space-around;
+    place-items: center;
+}
+.menuBoxClosed{
+    display: none;
+}
+.menuBoxOpened{
+    display: flex;
 }
 .menuTextBox{
     position: relative;
@@ -115,17 +125,8 @@ body{
 
 /*menu ouvrant centré*/
 
-.menuBoxClosed{
-    display: none;
-    opacity: 0;
-}
-.menuBoxOpened{
-    display: flex;
-    opacity: 0.8;
-    flex-direction: column;
-    justify-content: space-around;
-    place-items: center;
-}
+
+
 /*contenu du menu*/
 
 
@@ -179,6 +180,7 @@ body{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    flex-direction: column;
 }
 .sectionSelaouCloserBox{
     width: max(10%, 30px);
@@ -201,7 +203,7 @@ body{
 }
 .sectionSelaouOpened{
     display: flex;
-    flex-direction: column;
+    
 }
 .albumBox{
     width: 100%;
@@ -253,7 +255,48 @@ body{
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
 }
+
+/*section troiad*/
+.sectionTroiad{
+    width: min(500px, 100%);
+    height: 400px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    align-items: center;
+}
+.agendaBox{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.dateInfo{
+    color: white;
+    font-family: 'agtext';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .fadeIn{
     animation: 400ms ease-out 0ms 1 fadeIn;
@@ -265,8 +308,7 @@ body{
     
 }
 .sectionContactOpened{
-    display: grid;
-    place-items: center;
+    display: flex;
 }
 .sectionContactClosed{
     display: none;
@@ -276,4 +318,10 @@ body{
     font-size: 30px;
     font-family: 'agtext';
     color: white;
+}
+.sectionClosed{
+    display: none;
+}
+.sectionOpened{
+    display: flex;
 }

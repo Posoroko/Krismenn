@@ -15,7 +15,7 @@
     <h1 class="lighText krismenn">KRISMENN</h1>
 
 
-    <h2 class="menuBtn menuBtnOn pointer" id="menu">
+    <h2 class="menuBtn menuBtnOn pointer" id="menuBtn">
         <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 0 24 24" width="30px" fill="white"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
     </h2>
 
@@ -34,11 +34,19 @@
                 <span class="lighText menuText menuLink menuTextFr" id="écouter">PAROLES</span>
             </div>
 
+            <div class="menuTextBox troiadBox pointer" id="troiadBox">
+                <span class="lighText menuText menuLink menuTextBzhg">TROIAD</span>
+                <span class="lighText menuText menuLink menuTextEng">TOUR</span>
+                <span class="lighText menuText menuLink menuTextFr">TOURNÉE</span>
+            </div> 
+
             <div class="menuTextBox kontaktBox pointer" id="contactBox">
                 <span class="lighText menuText menuLink menuTextBzhg">KONTAKT</span>
                 <span class="lighText menuText menuLink menuTextEng">CONTACT</span>
                 <span class="lighText menuText menuLink menuTextFr">CONTACTER</span>
             </div>
+
+                       
 
             <div class="socialMedia menuItem">
 
@@ -86,7 +94,7 @@
 
         </div>
 
-        <section id="sectionSelaou" class="sectionSelaou sectionSelaouClosed fadeIn">
+        <section id="sectionSelaou" class="sectionSelaou sectionClosed fadeIn">
 
             <div class="albumBox">
                 <img class="album" src="images/pochette.jpg" alt="album Krismenn">
@@ -123,11 +131,11 @@
 
         </section>
 
-        <section class="sectionParoles sectionParolesClosed fadeIn" id="sectionParoles">
+        <section class="sectionParoles sectionClosed  fadeIn" id="sectionParoles">
 
        
 
-            <object class="livretObject" id="livret""
+            <object class="livretObject" id="livret"
                 data="images/livret/livret-Krismenn.pdf">
 
             </object>
@@ -139,11 +147,39 @@
 
         </section>
 
-        <section class="sectionContact sectionContactClosed fadeIn" id="sectionContact">
+        <section class="sectionTroiad sectionClosed  fadeIn" id="sectionTroiad">
+
+            <div class="agendaBox">
+                <div class="dateBox dateInfo">
+                    <div class="date">
+                        18/09/2021<br>
+                        14/10/2021<br>
+                        15/10/2021
+                    </div>
+                </div>
+                <div class="spectacleBox">
+                    <div class="spectacle dateInfo">
+                        Quéré-Le Menn<br>
+                        Krismenn<br>
+                        Krismenn
+                    </div>
+                </div>
+                <div class="villeBox">
+                    <div class="ville dateInfo">
+                        Poullaouen, Nuit de la Gavotte<br>
+                        Séné, Grain de Sel<br>
+                        Plougerneau, Bar Ha Gwin
+                    </div>
+                </div>
+            </div>
+            <img class="menuCloser pointer" src="images/closer.png" alt="" id="sectionTroiadCloser">
+
+        </section>
+
+        <section class="sectionContact sectionClosed  fadeIn" id="sectionContact">
 
             <span class="mail">info@krismenn.com</span>
             <img class="menuCloser pointer" src="images/closer.png" alt="" id="sectionContactCloser">
-
 
         </section>
 
