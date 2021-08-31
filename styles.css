@@ -14,6 +14,10 @@
     font-family: 'agtext';
     src: url(fonts/avant-g-medium.ttf)
 }
+@font-face{
+    font-family: 'agbook';
+    src: url(fonts/avant-g-book.ttf)
+}
 body{
     background-color: black;
 }
@@ -279,7 +283,7 @@ body{
 }
 .dateInfo{
     color: white;
-    font-family: 'agtext';
+    font-family: 'agbook';
     font-size: 16px;
 }
 
