@@ -59,6 +59,7 @@ function openSection(section) {
 } 
 function closeSection(section) {
   section.classList.replace('sectionOpened','sectionClosed')
+  menuCloserOn()
 }
 
 
