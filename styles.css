@@ -360,3 +360,19 @@ body{
 .sectionOpened{
     display: flex;
 }
+
+
+.devBox {
+    color: rgb(107, 107, 107);
+    text-decoration: none;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-family: "agbook";
+    font-weight: 100;
+
+    
+}
+.devBox:hover {
+    color: rgb(141, 141, 141);
+}
