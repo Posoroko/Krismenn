@@ -1,4 +1,4 @@
-const agendaURL = 'https://krismenn.monsieuredgar.com/items/Agenda?fields=id,date,city.name,project.name, id,city.';
+const agendaURL = 'https://krismenn.monsieuredgar.com/items/Agenda?fields=id,date,city.name,project.name,id,city&sort=-date';
 const agendaBox_div = document.getElementById('agendaBox');
 
 
