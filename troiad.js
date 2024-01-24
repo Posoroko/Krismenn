@@ -1,4 +1,4 @@
-const agendaURL = 'https://krismenn.monsieuredgar.com/items/Agenda?fields=id,date,city.name,project.name,id,city&sort=-date';
+const agendaURL = 'https://krismenn.monsieuredgar.com/items/Agenda?fields=id,date,city.name,showTemp&sort=-date';
 const agendaBox_div = document.getElementById('agendaBox');
 
 
@@ -23,8 +23,7 @@ const createEventBox = (event) => {
         wrapperBox_div.classList.add('wrapperBox');
             const showName_div = document.createElement('div');
             showName_div.classList.add('showName', 'dateInfo', 'spectacle');
-            showName_div.innerText = event.project.name;
-            console.log(event.project.name)
+            showName_div.innerText = event.showTemp;
         wrapperBox_div.appendChild(showName_div);
             const ville_div = document.createElement('div');
             ville_div.classList.add('ville', 'dateInfo');
